@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopMart - Tech Deals</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Responsive Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShopMart</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#video">Promo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="home">
+    <h1>Welcome to ShopMart</h1>
+    <p>Explore amazing tech gadgets at unbeatable prices!</p>
+    <img src="images/hero.jpg" alt="Hero image" />
+  </section>
+
+  <!-- Content Section -->
+  <section class="about">
+    <h2>Why Choose Us?</h2>
+    <p>ShopMart is your one-stop destination for the latest and most reliable tech gadgets. We offer competitive prices, fast delivery, and customer-first service.</p>
+  </section>
+
+  <!-- Card Section -->
+  <section class="cards" id="products">
+    <h2>Featured Products</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/headphones.jpg" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Crystal-clear sound and long battery life.</p>
+      </div>
+      <div class="card">
+        <img src="images/backpack.jpg" alt="Smart Backpack">
+        <h3>Smart Backpack</h3>
+        <p>Built-in charger, lightweight & water-resistant.</p>
+      </div>
+      <div class="card">
+        <img src="images/sneakers.jpg" alt="Smart Sneakers">
+        <h3>Smart Sneakers</h3>
+        <p>Track your steps and comfort your feet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embedded Video -->
+  <section class="video" id="video">
+    <h2>Watch Our Promo</h2>
+    <video controls width="100%">
+      <source src="videos/promo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 ShopMart. All rights reserved.</p>
+    <p>phone number: 587-777-5224</p>
+    <p>Contact:ebadriaz3@gmail.com/p>
+  </footer>
+
+  <!-- Script for menu -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
